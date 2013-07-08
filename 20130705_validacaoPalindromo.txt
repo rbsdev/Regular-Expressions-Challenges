@@ -20,7 +20,7 @@ andre@andre.com
 gmail@gmail.com
 
 A regex (somente para letras minusculas) seria assim:
-([a-z])@\1\.com
+([a-z]+)@\1\.com
 
 Enfim, o desafio de hoje pode ser resolvido de várias formas, mas é bem provável que uma das mais simples é utilizando capturing groups, e back references.
 
@@ -31,7 +31,7 @@ Lá vão as regras!
 3) Pode ter espaços. Ex: (123 44 3 21)
 4) A String toda deve ser um Palíndromo
 
-Dica: Os palíndromos de exemplo estão em ordem de complexidade. Solucione um, depois expanda sua regex para pegar o próximo. A regex final deve pegar qualquer um!
+Dica: Os palíndromos de exemplo estão em ordem de complexidade. Solucione um, depois expanda sua regex para pegar o próximo. A regex final deve pegar todos os válidos, e nenhum dos inválidos!
 
 Pode:
 1221
