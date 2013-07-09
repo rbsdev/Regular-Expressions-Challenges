@@ -11,9 +11,9 @@ import java.util.regex.Pattern;
 public class ValidaPalindromo {
 
 	// A expressão é bem simples, o problema é que com a necessidade de suportar espaços, ela fica um pouco ilegível.
-	// Aqui seria o mesmo pattern, sem suporte a espaços: ^(.)?(.)?(.)(.)\\4?\\3\\2?\\1?$
+	// Aqui seria o mesmo pattern, sem suporte a espaços: ^(.)?(.)?(.)(.)\4?\3\2?\1?$
 	
-	// Agora sim, o pattern completo, com suporte a espaços: ^(.)?\\s?(.)?\\s?(.)\\s?(.)\\s?\\4?\\s?\\3\\s?\\2?\\s?\\1?$
+	// Agora sim, o pattern completo, com suporte a espaços: ^([^\s])?\s?([^\s])?\s?([^\s])\s?([^\s])\s?\4?\s?\3\s?\2?\s?\1?$ 
 	
 	// A explicação:
 	static String patternString = ""
