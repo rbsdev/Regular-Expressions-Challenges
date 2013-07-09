@@ -18,9 +18,9 @@ public class ValidaPalindromo {
 	// A explicação:
 	static String patternString = ""
 			+ "^" // Início de String, para evitar que dê match em "123321" na String "Teste 123321"
-			+ "(.)?" // O primeiro caractere, opcional, pois em palíndromos menores que quatro caracteres ele não ocorre.
+			+ "([^\\s])?" // O primeiro caractere, opcional, pois em palíndromos menores que quatro caracteres ele não ocorre. Não pode ser um caractere de espaço.
 			+ "\\s?" // Espaço opcional.
-			+ "(.)?" // O segundo caractere (ou, o primeiro de palíndromos de 3 caracteres), opcional também, para o caso de palíndromos menores.
+			+ "([^\\s])?" // O segundo caractere (ou, o primeiro de palíndromos de 3 caracteres), opcional também, para o caso de palíndromos menores. Não pode ser um caractere de espaço.
 			+ "\\s?" // Espaço opcional.
 			+ "([^\\s])" // O terceiro caractere (ou, o primeiro de palíndromos de 2 caracteres, o segundo do de 3), este não é opcional, visto que sempre teremos ao mínimo 2 caracteres "iniciais". Não pode ser um caractere de espaço. 
 			+ "\\s?" // Espaço opcional
