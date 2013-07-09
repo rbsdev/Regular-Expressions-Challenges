@@ -22,9 +22,9 @@ public class ValidaPalindromo {
 			+ "\\s?" // Espaço opcional.
 			+ "(.)?" // O segundo caractere (ou, o primeiro de palíndromos de 3 caracteres), opcional também, para o caso de palíndromos menores.
 			+ "\\s?" // Espaço opcional.
-			+ "(.)" // O terceiro caractere (ou, o primeiro de palíndromos de 2 caracteres, o segundo do de 3), este não é opcional, visto que sempre teremos ao mínimo 2 caracteres "iniciais". 
+			+ "([^\\s])" // O terceiro caractere (ou, o primeiro de palíndromos de 2 caracteres, o segundo do de 3), este não é opcional, visto que sempre teremos ao mínimo 2 caracteres "iniciais". Não pode ser um caractere de espaço. 
 			+ "\\s?" // Espaço opcional
-			+ "(.)" // O quarto caractere (ou o segundo de palíndromos de 2 caracteres, o terceiro do de 3), obrigatório pelo mesmo motivo do terceiro caractere.
+			+ "([^\\s])" // O quarto caractere (ou o segundo de palíndromos de 2 caracteres, o terceiro do de 3), obrigatório pelo mesmo motivo do terceiro caractere. Não pode ser um espaço.
 			+ "\\s?" // Espaço opcional
 			+ "\\4?" // O "rematch" do quarto caractere. Opcional, pois em palíndromos o "caractere do meio" pode apacer só uma vez. Ex: ovo
 			+ "\\s?" // Espaço opcional
