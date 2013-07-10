@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+Regular Expression Challenges
+==============================
+
+RBSDev - Regular Expressions Challenges
+
+##1 Email Validation Regular Expression
+
+* An introduction to Regular Expression
+  * Getting Started with Regular Expression [@andretrevisani](https://github.com/andretrevisani) 9 Exercises
+  * Project: Choose Your Programming Language and solve the problem! [@andretrevisani](https://github.com/andretrevisani) 
+=======
 ## Regular Expressions Challenges
 
 Repositório criado com o intuito de aprimorar o conhecimento em expressões regulares.
@@ -71,3 +83,4 @@ Dicas dicas dicas dicas dicas dicas dicas dicas dicas dicas dicas dicas dicas di
 __________________
 
 **Author:** Nome do Autor
+>>>>>>> ebc7dfa9d8c6ce802adcbf1b2d6f50639863db31
