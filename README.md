@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Regular Expression Challenges
 ==============================
 
