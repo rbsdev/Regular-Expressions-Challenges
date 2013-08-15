@@ -1,0 +1,54 @@
+<!-- Online view: http://jsfiddle.net/evandroeisinger/p6mw3/ -->
+
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Regex: Links search.</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    	<style>
+    		#source {
+			    width: 500px;
+			    height: 200px;
+			}
+			#output {
+			    color: green;
+			    width: 495px;
+			    height: auto;
+			    border: 1px solid black;
+			    padding: 5px;
+			}
+    	</style>
+    </head>
+    <body>
+
+	<h2>Paste your html: <button onclick="find();">Find Links</button></h2>
+	<textarea id="source"></textarea>
+	<h3>Links found:</h3>
+	<div id="output"></div>
+
+	<script>
+
+		function find() {
+
+			var source  = document.getElementById("source").value,
+				output  = document.getElementById("output"),
+				links 	= "<ul>",
+				regex   = new RegExp( '<[aA][^>]* href="(.+?)"[^>]*>(.+?)<\/[aA]>', "g" );
+				
+
+				while (results = regex.exec(source)) {
+				 
+					links += ("<li><strong>" + results[2] + "</strong> - Link:  " + results[1]);
+				 
+				}
+
+				links 	+= "</ul>"
+
+				output.innerHTML = links;
+
+		}
+
+    </script>
+    </body>
+</html>
