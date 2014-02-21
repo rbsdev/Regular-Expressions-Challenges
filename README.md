@@ -51,13 +51,11 @@ Isso pode isso pode.
 Isso pode isso pode.
 Isso pode isso pode.
 Isso pode isso pode.
-Isso pode isso pode.
 ```
 
 ### O que não pode:
 
 ``` txt
-Não pode não pode.
 Não pode não pode.
 Não pode não pode.
 Não pode não pode.
